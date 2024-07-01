@@ -1,0 +1,14 @@
+
+
+@font-face {
+    font-family: 'Glowen', sans-serif;
+    src: url('../assets/fonts/Glowen.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    animation: fade-in 1.5s forwards; /* Apply a fade-in animation */
+    font-family: 'Glowen', 'sans-serif';
+}

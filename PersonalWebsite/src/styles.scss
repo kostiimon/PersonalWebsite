@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Glowen';
+    src: url('./assets/fonts/Glowen.ttf') format('truetype');
+}
+
+* :not(.nav:hover){
+    font-family: "Glowen";
+    animation: fade-in 1.5s forwards;
+}

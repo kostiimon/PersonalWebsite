@@ -1,0 +1,126 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.1); /* Start with smaller scale */
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1.2); /* Scale up to 1.2 times */
+  }
+}
+
+.header {
+  background: linear-gradient(to bottom, rgb(104, 103, 102), rgba(216, 215, 215, 0.5));
+  height: 110%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transform: scale(1);
+  padding-bottom: 10px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  font-size: 4rem;
+  color: aliceblue;
+  border: none;
+  margin-bottom: 0;
+  border-top: 20px;
+  font-weight: 200;
+  font-style: light;
+  animation: fade-in 1.5s forwards; /* Apply a fade-in animation */
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-size: 2rem;
+  color: aliceblue;
+  border: none;
+  border-top: 10px;
+  font-weight: 200;
+  font-style: light;
+  animation: fade-in 1.5s forwards;
+}
+
+.nav {
+    list-style-type: none;
+    margin-top: 0px;
+    padding-top: 50px;
+    border-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    animation: fade-in 1.5s forwards;
+}
+
+@keyframes underline-animation {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+}
+
+.Home,
+.Contact,
+.About,
+.Projects {
+  position: relative;
+  display: inline-block;
+}
+
+.Home::before,
+.Contact::before,
+.About::before,
+.Projects::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: aliceblue;
+  transition: width 0.3s ease;
+}
+
+.Home:hover::before,
+.Contact:hover::before,
+.About:hover::before,
+.Projects:hover::before {
+  width: 100%;
+}
+
+a:-webkit-any-link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  animation: fade-in 1.5s forwards;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-top: 20px; // Adjust this value to move the clickable area down
+  padding-bottom: 5px;
+  border-top: 50px;
+  animation: fade-in 1.5s forwards;
+  padding-left: 0px;
+}
