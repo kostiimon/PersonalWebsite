@@ -4,8 +4,6 @@ import { HomeComponent } from './Components/home/home.component';
 import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { ContactComponent } from './Components/contact/contact.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { provideRouter } from '@angular/router';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,3 +13,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent}
 ];
 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

@@ -117,6 +117,15 @@ a:-webkit-any-link {
   animation: fade-in 1.5s forwards;
 }
 
+@keyframes social-grow {
+  0% {
+    size: origin;
+  }
+  100% {
+    size: 200%;
+  }
+}
+
 .socials img {
   width: 25px;
   height: 25px;
@@ -126,4 +135,8 @@ a:-webkit-any-link {
   border-top: 50px;
   animation: fade-in 1.5s forwards;
   padding-left: 0px;
+}
+
+.socials img:hover {
+  animation: social-grow ease-in 0.5s ;
 }
