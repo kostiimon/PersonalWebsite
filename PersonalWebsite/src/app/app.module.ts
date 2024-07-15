@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { AboutMeComponent } from './Components/about-me/about-me.component'; // Import the AboutComponent
-import { HomeComponent } from './Components/home/home.component';
-import { ContactComponent } from './Components/contact/contact.component';
-import { ProjectsComponent } from './Components/projects/projects.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
