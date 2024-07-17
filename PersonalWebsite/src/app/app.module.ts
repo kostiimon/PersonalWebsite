@@ -7,7 +7,6 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +14,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
     HomeComponent,
     ContactComponent,
     ProjectsComponent
-     // Remove the HomeComponent from the declarations array
   ],
   imports: [
     BrowserModule,
@@ -23,8 +21,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutMeComponent },
       { path: 'contact', component: ContactComponent},
-      {path: 'projects', component: ProjectsComponent}
-      // Add more routes as needed
+      { path: 'projects', component: ProjectsComponent}
     ])
   ],
   providers: [],
